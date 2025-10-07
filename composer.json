@@ -1,0 +1,58 @@
+{
+    "name": "021/restful-for-laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "O21\\RestfulForLaravel\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "O21\\RestfulForLaravel\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "021-projects",
+            "email": "20326979+021-projects@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.0|^3.0",
+        "laravel/pint": "^1.13",
+        "orchestra/canvas": "^10.0",
+        "orchestra/testbench": "^8.21|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^10.5|^11.0|^12.0"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "analyse": "phpstan analyse",
+        "pint": "pint",
+        "canvas": "./vendor/bin/canvas"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "O21\\RestfulForLaravel\\ServiceProvider"
+            ],
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
