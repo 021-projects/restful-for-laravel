@@ -11,7 +11,7 @@ Restful for Laravel also supports exception handling: it consolidates errors int
 ## Installation
 You can install the package via Composer:
 ```bash
-composer require genesis/restful-for-laravel
+composer require 021/restful-for-laravel
 ```
 
 ## Response Structure
